@@ -1,0 +1,34 @@
+/* Write some CSS below */
+
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  font-family: 'Archivo Black', sans-serif;
+  background-color: lightcyan;
+  display: table-cell;
+  vertical-align: top;
+  text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+h1 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 5ch; 
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Zilla Slab Highlight', cursive;
+  }
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
