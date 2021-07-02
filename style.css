@@ -2,27 +2,24 @@
 
 html, body {
   height: 100%;
+  background-color: #404043;
+
 }
 
 html {
-  display: table;
   margin: auto;
 }
 
 body {
   font-family: 'Archivo Black', sans-serif;
-  background-color: lightcyan;
-  display: table-cell;
-  vertical-align: top;
-  text-align: justify;
-  padding-left: 20px;
-  padding-right: 20px;
   }
 
 h1 {
   font-family: 'Archivo Black', sans-serif;
   font-size: 5ch; 
   text-align: center;
+  background-color: yellow;
+  padding: 30px;
 }
 
 h2 {
@@ -31,4 +28,75 @@ h2 {
 
 p {
   font-family: 'Montserrat', sans-serif;
+  text-align: left;
 }
+
+img {
+  padding-bottom: 14px;
+  max-width: 100%; 
+  display: block; 
+  height: auto;
+}
+
+.container {
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: dense;
+  
+}
+
+.container-note {
+  background-color:white;
+  border-radius: 50px;
+  padding: 30px;
+  margin: 20px;
+	box-shadow: 0 0 16px rgba(1,1,1,1);
+  height: fit-content;
+}
+
+.footer {
+  background-color:yellow;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 14px;
+  padding: 24px 0;
+  width: auto;
+
+}
+
+.footer p {
+text-align: center;
+width: 100%;
+}
+
+  /* Cards media queries */
+  @media (max-width: 800px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+    
+    .container {
+      width: auto;
+    }
+    
+    /* Container media queries */
+    @media (min-width: 500px) {
+    .container {
+      width: 400px;
+    }
+    }
+    
+    
+    @media (min-width: 800px) {
+    .container {
+      width: 600px;
+    }
+    }
+    
+    @media (min-width: 1000px) {
+    .container {
+      width: 800px;
+    }
+    }
